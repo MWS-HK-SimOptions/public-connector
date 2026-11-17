@@ -1,0 +1,15 @@
+{
+  "name": "simoptions",
+  "owner": {
+    "name": "MWS HK Limited",
+    "email": "contact@simoptions.com",
+    "url": "https://simoptions.com"
+  },
+  "description": "SimOptions travel eSIM plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "simoptions",
+      "source": "./"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "simoptions",
+  "version": "1.0.0",
+  "description": "Find and compare SimOptions travel eSIM plans, check phone eSIM compatibility, and open a plan on simoptions.com. Read-only, no sign-in.",
+  "author": {
+    "name": "MWS HK Limited",
+    "email": "contact@simoptions.com",
+    "url": "https://simoptions.com"
+  },
+  "homepage": "https://simoptions.com",
+  "repository": "https://github.com/MWS-HK-SimOptions/public-connector",
+  "license": "MIT",
+  "keywords": ["esim", "travel", "roaming", "mobile data"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SimOptions",
+        "shortDescription": "Travel eSIM plans worldwide",
+        "longDescription": "SimOptions sells prepaid travel eSIMs for destinations around the world. Ask which countries and regions are covered, compare data plans for one or more destinations by trip length and data allowance, see prices in your local currency with networks, 5G, calls/SMS and top-up support, and check whether a phone supports eSIM. Every plan comes with a link to its page on simoptions.com, where purchase happens. The plugin is read-only, needs no sign-in, and does not access any SimOptions account.",
+        "developerName": "MWS HK Limited",
+        "category": "Travel",
+        "capabilities": [
+          "Search eSIM destinations",
+          "Compare eSIM plans",
+          "Check phone eSIM compatibility"
+        ],
+        "websiteURL": "https://simoptions.com",
+        "supportURL": "https://simoptions.com/contact-us/",
+        "privacyPolicyURL": "https://simoptions.com/privacy-cookie-policy/",
+        "termsOfServiceURL": "https://simoptions.com/general-conditions-of-services/",
+        "defaultPrompt": [
+          "Find an eSIM for 10 days in Japan with at least 10 GB.",
+          "Compare eSIM plans for a trip to France, Italy and Spain.",
+          "Does the iPhone 13 support eSIM?"
+        ],
+        "brandColor": "#8357F9",
+        "brandColorDark": "#5195FF"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Find a destination",
+              "prompt": "Does SimOptions sell eSIMs for Vietnam?",
+              "tools_triggered": "destinations_search",
+              "expected_behavior": "Confirms Vietnam is covered and names the matching destination."
+            },
+            {
+              "description": "Plans for one destination filtered by days and data",
+              "prompt": "Find an eSIM for 10 days in Japan with at least 10 GB.",
+              "tools_triggered": "destinations_search, plans_find",
+              "expected_behavior": "Lists Japan plans of at least 10 days and 10 GB with local-currency prices, networks and a link to each plan on simoptions.com."
+            },
+            {
+              "description": "Multi-country trip",
+              "prompt": "Compare eSIM plans for a trip to France, Italy and Spain.",
+              "tools_triggered": "destinations_search, plans_find",
+              "expected_behavior": "Returns plans that cover all three countries, with prices, data allowances and plan links."
+            },
+            {
+              "description": "Plan features",
+              "prompt": "Which eSIM plans for Thailand support 5G and can be topped up?",
+              "tools_triggered": "destinations_search, plans_find",
+              "expected_behavior": "Lists Thailand plans with their 5G and top-up support as returned by the plugin, without inventing values."
+            },
+            {
+              "description": "Device compatibility",
+              "prompt": "Does the Samsung Galaxy S21 support eSIM?",
+              "tools_triggered": "devices_check",
+              "expected_behavior": "States whether the Galaxy S21 is eSIM-compatible according to SimOptions' device list."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Buying inside the chat is not supported; the plugin only links to plan pages.",
+              "prompt": "Buy the cheapest Japan eSIM for me with my saved card."
+            },
+            {
+              "description": "Account and order data are out of scope; the plugin has no sign-in.",
+              "prompt": "Show me the eSIMs I ordered last month."
+            },
+            {
+              "description": "Unrelated travel request the plugin should not act on.",
+              "prompt": "Book me a hotel in Tokyo for next week."
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "Initial release: destination search, plan search and comparison, plan detail, and phone eSIM compatibility check."
+      }
+    }
+  }
+}
