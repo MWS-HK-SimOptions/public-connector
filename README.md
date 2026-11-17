@@ -64,7 +64,7 @@ Point any client that supports streamable HTTP at `https://simoptions.com/api/co
 ## Privacy, terms and support
 
 - Privacy policy: https://simoptions.com/privacy-cookie-policy/
-- Terms: <!-- TODO: confirm the public terms URL (candidates: https://simoptions.com/general-conditions-of-services/ or https://simoptions.com/terms-and-conditions/) --> TODO
+- Terms: https://simoptions.com/general-conditions-of-services/
 - Support: contact@simoptions.com or https://simoptions.com/contact-us/
 
 SimOptions is operated by MWS HK Limited.

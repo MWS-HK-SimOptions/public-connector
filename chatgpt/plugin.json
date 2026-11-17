@@ -10,6 +10,7 @@
   },
   "homepage": "https://simoptions.com",
   "repository": "https://github.com/MWS-HK-SimOptions/public-connector",
+  "license": "MIT",
   "keywords": ["esim", "travel", "roaming", "mobile data"],
   "extensions": {
     "com.openai": {
@@ -28,6 +29,7 @@
         "websiteURL": "https://simoptions.com",
         "supportURL": "https://simoptions.com/contact-us/",
         "privacyPolicyURL": "https://simoptions.com/privacy-cookie-policy/",
+        "termsOfServiceURL": "https://simoptions.com/general-conditions-of-services/",
         "defaultPrompt": [
           "Find an eSIM for 10 days in Japan with at least 10 GB.",
           "Compare eSIM plans for a trip to France, Italy and Spain.",
