@@ -17,13 +17,12 @@
       "interface": {
         "displayName": "SimOptions",
         "shortDescription": "Travel eSIM plans worldwide",
-        "longDescription": "SimOptions sells prepaid travel eSIMs for destinations around the world. Ask which countries and regions are covered, compare data plans for one or more destinations by trip length and data allowance, see prices in your local currency with networks, 5G, calls/SMS and top-up support, open the full detail of a plan, and check whether a phone supports eSIM. Every plan comes with a link to its page on simoptions.com, where purchase happens. The plugin is read-only, needs no sign-in, and does not access any SimOptions account.",
+        "longDescription": "SimOptions sells prepaid travel eSIMs for destinations around the world. Ask which countries and regions are covered, compare data plans for one or more destinations by trip length and data allowance, see prices in your local currency with networks, 5G, calls/SMS and top-up support, and check whether a phone supports eSIM. Every plan comes with a link to its page on simoptions.com, where purchase happens. The plugin is read-only, needs no sign-in, and does not access any SimOptions account.",
         "developerName": "MWS HK Limited",
         "category": "Travel",
         "capabilities": [
           "Search eSIM destinations",
           "Compare eSIM plans",
-          "Show eSIM plan details",
           "Check phone eSIM compatibility"
         ],
         "websiteURL": "https://simoptions.com",
@@ -60,10 +59,10 @@
               "expected_behavior": "Returns plans that cover all three countries, with prices, data allowances and plan links."
             },
             {
-              "description": "Plan detail",
-              "prompt": "Tell me more about the first plan: does it support 5G, calls and top-ups?",
-              "tools_triggered": "plans_get",
-              "expected_behavior": "Shows that plan's full detail, including 5G, calls/SMS and top-up support, without inventing values."
+              "description": "Plan features",
+              "prompt": "Which eSIM plans for Thailand support 5G and can be topped up?",
+              "tools_triggered": "destinations_search, plans_find",
+              "expected_behavior": "Lists Thailand plans with their 5G and top-up support as returned by the plugin, without inventing values."
             },
             {
               "description": "Device compatibility",

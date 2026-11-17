@@ -10,7 +10,6 @@ Tools (all read-only, no sign-in):
 
 - `destinations_search`: find the countries and regions SimOptions sells eSIMs for.
 - `plans_find`: plans for one or more destinations, filtered by days and data, with local-currency prices and plan and checkout links.
-- `plans_get`: full detail of one plan.
 - `devices_check`: check whether a phone is eSIM-compatible.
 
 Install in Claude Code from the marketplace:

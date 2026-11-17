@@ -18,7 +18,6 @@ All tools are read-only and work without signing in.
 | --- | --- |
 | `destinations_search` | Finds the countries and regions SimOptions sells eSIMs for. |
 | `plans_find` | Lists plans for one or more destinations (multi-country trips), filtered by days and data, with prices in local currency, networks, 5G, calls/SMS, top-up support, and links to the plan page and checkout. |
-| `plans_get` | Returns the full detail of one plan. |
 | `devices_check` | Checks whether a phone is eSIM-compatible. |
 
 ## Connect
