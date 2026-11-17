@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.1
+
+Plans now link only to their landing page on simoptions.com, where they are bought.
+
+- `plans_find`: each plan's one link is `pageUrl`, its landing page. The `checkoutUrl` field is removed.
+- Bouygues Telecom plans link to the Europe page.
+
 ## v1.0.0
 
 First public release of the SimOptions connector: a remote, read-only MCP server for finding and comparing travel eSIM plans.

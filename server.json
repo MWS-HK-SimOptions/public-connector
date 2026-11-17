@@ -2,9 +2,9 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.simoptions/connector",
   "title": "SimOptions",
-  "description": "Find and compare travel eSIM plans, check phone eSIM compatibility, and get a checkout link.",
+  "description": "Find and compare travel eSIM plans, check phone eSIM compatibility, and open each plan's page.",
   "websiteUrl": "https://simoptions.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "remotes": [
     {
       "type": "streamable-http",
