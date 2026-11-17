@@ -4,7 +4,7 @@ SimOptions public connector for ChatGPT and Claude: find and compare travel eSIM
 
 [SimOptions](https://simoptions.com) is a travel eSIM store run by MWS HK Limited. This connector is a remote MCP server that lets an AI assistant answer travel eSIM questions with live SimOptions data: which destinations are covered, which plans fit a trip, what a plan includes, and whether a phone supports eSIM.
 
-- **Server URL:** `https://simoptions.com/api/connector`
+- **Server URL:** `https://simoptions.com/api/connector/`
 - **Transport:** streamable HTTP
 - **Access:** read-only, no sign-in, no API key
 
@@ -20,7 +20,6 @@ All tools are read-only and work without signing in.
 | `plans_find` | Lists plans for one or more destinations (multi-country trips), filtered by days and data, with prices in local currency, networks, 5G, calls/SMS, top-up support, and links to the plan page and checkout. |
 | `plans_get` | Returns the full detail of one plan. |
 | `devices_check` | Checks whether a phone is eSIM-compatible. |
-| `guides_setup` | Gives eSIM installation and activation help. <!-- guides_setup: confirm --> |
 
 ## Connect
 
@@ -29,7 +28,7 @@ All tools are read-only and work without signing in.
 Add the server directly:
 
 ```bash
-claude mcp add --transport http simoptions https://simoptions.com/api/connector
+claude mcp add --transport http simoptions https://simoptions.com/api/connector/
 ```
 
 Or install it as a plugin from this repository's marketplace:
@@ -41,19 +40,19 @@ claude plugin install simoptions@simoptions
 
 ### Claude.ai and the Claude apps
 
-Open **Customize > Connectors**, add a custom connector, and enter `https://simoptions.com/api/connector`. No sign-in is needed. On Team and Enterprise plans, an Owner adds custom connectors for the organization.
+Open **Customize > Connectors**, add a custom connector, and enter `https://simoptions.com/api/connector/`. No sign-in is needed. On Team and Enterprise plans, an Owner adds custom connectors for the organization.
 
 <!-- TODO: once the connector is listed in Anthropic's directory (https://claude.ai/directory), add the directory link here. -->
 
 ### ChatGPT
 
-Go to [ChatGPT Plugins](https://chatgpt.com/plugins), select the plus button, then **Add custom MCP server**. Enter `https://simoptions.com/api/connector` as the server URL, choose no authentication, and select **Create as a plugin**. Custom MCP servers depend on your account and workspace settings.
+Go to [ChatGPT Plugins](https://chatgpt.com/plugins), select the plus button, then **Add custom MCP server**. Enter `https://simoptions.com/api/connector/` as the server URL, choose no authentication, and select **Create as a plugin**. Custom MCP servers depend on your account and workspace settings.
 
 <!-- TODO: once the plugin is published in the ChatGPT plugin directory, add the directory link here. -->
 
 ### Other MCP clients
 
-Point any client that supports streamable HTTP at `https://simoptions.com/api/connector`. No headers or credentials are required.
+Point any client that supports streamable HTTP at `https://simoptions.com/api/connector/`. No headers or credentials are required.
 
 ## Example prompts
 

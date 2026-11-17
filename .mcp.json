@@ -2,7 +2,7 @@
   "mcpServers": {
     "simoptions": {
       "type": "http",
-      "url": "https://simoptions.com/api/connector"
+      "url": "https://simoptions.com/api/connector/"
     }
   }
 }
