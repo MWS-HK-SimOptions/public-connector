@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.0-8357F9" alt="Version 1.0.0"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.1-8357F9" alt="Version 1.0.1"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-5195FF" alt="MIT licence"></a>
   <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-streamable%20HTTP-8357F9" alt="MCP: streamable HTTP"></a>
   <img src="https://img.shields.io/badge/auth-none-5195FF" alt="No authentication">
@@ -155,7 +155,7 @@ Each plan includes:
 | `topupsEnabled` | Whether more data can be added later |
 | `price` | `currency`, `regular` and `sale` (or `null`) |
 | `inStock` | Whether it can be bought now |
-| `pageUrl`, `checkoutUrl` | The plan's page, and a link to buy it in the quoted currency |
+| `pageUrl` | The plan's landing page on simoptions.com, where it is bought |
 
 ### `devices_check`: Check eSIM compatibility
 
@@ -207,8 +207,7 @@ The answer is `esimCompatible: "yes"` together with the listed model, or `"unkno
       "operator": "Example Operator",
       "price": { "currency": "USD", "regular": 19.9, "sale": null },
       "inStock": true,
-      "pageUrl": "https://simoptions.com/...",
-      "checkoutUrl": "https://simoptions.com/...?currency=USD"
+      "pageUrl": "https://simoptions.com/..."
     }
   ]
 }
