@@ -241,4 +241,6 @@ See the [privacy policy](https://simoptions.com/privacy-cookie-policy/) and [ter
 
 The files in this repository are released under the [MIT licence](LICENSE).
 
+The SimOptions name and logo are trademarks of MWS HK Limited and are not covered by the MIT licence.
+
 <p align="center"><sub>SimOptions is operated by MWS HK Limited.</sub></p>
