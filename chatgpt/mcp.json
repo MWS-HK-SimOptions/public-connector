@@ -3,7 +3,7 @@
   "mcpServers": {
     "simoptions": {
       "type": "streamable-http",
-      "url": "https://simoptions.com/api/connector/"
+      "url": "https://www.simoptions.com/api/connector/"
     }
   }
 }

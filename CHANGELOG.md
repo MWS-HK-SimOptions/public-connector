@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.0
+
+The Claude Code plugin now helps plan a trip, not only look up plans.
+
+- New `/esim` command: `/esim Japan 10 days` finds the plans that fit a trip and recommends the best one or two.
+- New `esim-trip` skill: teaches Claude how to plan a trip's mobile data with the SimOptions tools whenever it comes up.
+- The server address in every manifest is now `https://www.simoptions.com/api/connector/`, which answers directly without a redirect.
+
 ## v1.0.1
 
 Plans now link only to their landing page on simoptions.com, where they are bought.
