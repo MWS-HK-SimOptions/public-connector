@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.1-8357F9" alt="Version 1.0.1"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.1.0-8357F9" alt="Version 1.1.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-5195FF" alt="MIT licence"></a>
   <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-streamable%20HTTP-8357F9" alt="MCP: streamable HTTP"></a>
   <img src="https://img.shields.io/badge/auth-none-5195FF" alt="No authentication">
@@ -61,7 +61,7 @@ The connector is a remote [Model Context Protocol](https://modelcontextprotocol.
 
 | | |
 | --- | --- |
-| **Server URL** | `https://simoptions.com/api/connector/` |
+| **Server URL** | `https://www.simoptions.com/api/connector/` |
 | **Transport** | Streamable HTTP (stateless JSON-RPC 2.0) |
 | **Authentication** | None |
 | **Access** | Read-only. Every tool is marked `readOnlyHint: true` |
@@ -73,7 +73,7 @@ The connector is a remote [Model Context Protocol](https://modelcontextprotocol.
 
 ### Claude Code
 
-Install it as a plugin from this repository:
+Install it as a plugin from this repository. The plugin adds the connector, an `/esim` command and a trip-planning skill:
 
 ```bash
 claude plugin marketplace add MWS-HK-SimOptions/public-connector
@@ -86,34 +86,51 @@ claude plugin install simoptions@simoptions
 Or add the server directly:
 
 ```bash
-claude mcp add --transport http simoptions https://simoptions.com/api/connector/
+claude mcp add --transport http simoptions https://www.simoptions.com/api/connector/
 ```
 
+Adding the server directly gives you the tools only, without the command and the skill.
+
 Check that it's connected by running `/mcp` inside Claude Code.
+
+#### The `/esim` command
+
+Plan a trip's mobile data in one step:
+
+```text
+/esim Japan 10 days
+/esim France Italy Spain 2 weeks 10 GB in EUR
+```
+
+Claude looks up the destinations, finds the plans that cover the whole trip, recommends the best one or two with their page links, and offers to check your phone.
+
+#### The `esim-trip` skill
+
+The plugin also teaches Claude how to plan a trip's data whenever you ask about it in plain words, without the command. It asks for missing trip details, uses the right destination codes, matches plans to the trip length and data need, and states only facts the tools returned.
 
 ### Claude (claude.ai, desktop and mobile)
 
 1. Open **Customize → Connectors** and add a custom connector.
-2. Enter `https://simoptions.com/api/connector/`. No sign-in is needed.
+2. Enter `https://www.simoptions.com/api/connector/`. No sign-in is needed.
 
 On Team and Enterprise plans, an Owner adds custom connectors for the organisation.
 
 ### ChatGPT
 
 1. Go to [ChatGPT Plugins](https://chatgpt.com/plugins), select the **+** button, then **Add custom MCP server**.
-2. Enter `https://simoptions.com/api/connector/` as the server URL and choose **No authentication**.
+2. Enter `https://www.simoptions.com/api/connector/` as the server URL and choose **No authentication**.
 3. Select **Create as a plugin**.
 
 Custom MCP servers depend on your ChatGPT plan and workspace settings.
 
 ### Other MCP clients
 
-Point any client that supports streamable HTTP at `https://simoptions.com/api/connector/`. No headers or credentials are needed.
+Point any client that supports streamable HTTP at `https://www.simoptions.com/api/connector/`. No headers or credentials are needed.
 
 To try it from a terminal:
 
 ```bash
-curl -s https://simoptions.com/api/connector/ \
+curl -s https://www.simoptions.com/api/connector/ \
   -H 'content-type: application/json' \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
