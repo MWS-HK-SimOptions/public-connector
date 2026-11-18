@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.2
+
+The README's images are re-saved as smaller PNGs.
+
+- The logo and diagram look the same and are about 8x smaller. The plugin directory's scan no longer reads part of the diagram's image data as a shell command.
+- The server, its tools, the Claude Code plugin and the ChatGPT plugin work as before. Only their version number changes.
+
 ## v1.1.1
 
 The repository can now be submitted to the Claude plugin directory.

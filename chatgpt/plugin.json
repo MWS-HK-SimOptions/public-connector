@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "simoptions",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Find and compare SimOptions travel eSIM plans, check phone eSIM compatibility, and open a plan on simoptions.com. Read-only, no sign-in.",
   "author": {
     "name": "MWS HK Limited",

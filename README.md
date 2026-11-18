@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.1.1-8357F9" alt="Version 1.1.1"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.1.2-8357F9" alt="Version 1.1.2"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-5195FF" alt="MIT licence"></a>
   <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-streamable%20HTTP-8357F9" alt="MCP: streamable HTTP"></a>
   <img src="https://img.shields.io/badge/auth-none-5195FF" alt="No authentication">
