@@ -5,7 +5,7 @@
 The repository can now be submitted to the Claude plugin directory.
 
 - The README's logo and diagram are PNG images instead of SVG, which the directory doesn't accept.
-- No change to the server, its tools, the Claude Code plugin or the ChatGPT plugin.
+- The server, its tools, the Claude Code plugin and the ChatGPT plugin work as before. Only their version number changes.
 
 ## v1.1.0
 
