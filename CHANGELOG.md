@@ -4,7 +4,7 @@
 
 The README's images are re-saved as smaller PNGs.
 
-- The logo and diagram look the same and are 6 to 11 times smaller. This removes byte sequences in the diagram's image data that the plugin directory's scan read as a shell command.
+- The logo and diagram look the same and are 6 to 9 times smaller. This removes byte sequences in the diagram's image data that the plugin directory's scan read as a shell command.
 - The server, its tools, the Claude Code plugin and the ChatGPT plugin work as before. Only their version number changes.
 
 ## v1.1.1
