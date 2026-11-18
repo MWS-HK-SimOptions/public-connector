@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://simoptions.com">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-      <img src="assets/logo.svg" alt="SimOptions" width="320">
+      <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+      <img src="assets/logo.png" alt="SimOptions" width="320">
     </picture>
   </a>
 </p>
@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.1.0-8357F9" alt="Version 1.1.0"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.1.1-8357F9" alt="Version 1.1.1"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-5195FF" alt="MIT licence"></a>
   <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-streamable%20HTTP-8357F9" alt="MCP: streamable HTTP"></a>
   <img src="https://img.shields.io/badge/auth-none-5195FF" alt="No authentication">
@@ -52,8 +52,8 @@ Every plan comes with a link to its page on simoptions.com, where the purchase h
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/how-it-works-dark.svg">
-    <img src="assets/how-it-works.svg" alt="Your AI assistant calls the SimOptions connector over MCP; the connector reads the live catalogue of destinations, plans and compatible devices." width="820">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/how-it-works-dark.png">
+    <img src="assets/how-it-works.png" alt="Your AI assistant calls the SimOptions connector over MCP; the connector reads the live catalogue of destinations, plans and compatible devices." width="820">
   </picture>
 </p>
 
