@@ -1,7 +1,7 @@
 {
   "name": "simoptions",
   "displayName": "SimOptions",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Find and compare SimOptions travel eSIM plans, check phone eSIM compatibility, and open each plan's page on simoptions.com. Read-only, no sign-in.",
   "author": {
     "name": "MWS HK Limited",
