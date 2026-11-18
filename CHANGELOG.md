@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.1
+
+The repository can now be submitted to the Claude plugin directory.
+
+- The README's logo and diagram are PNG images instead of SVG, which the directory doesn't accept.
+- No change to the server, its tools, the Claude Code plugin or the ChatGPT plugin.
+
 ## v1.1.0
 
 The Claude Code plugin now helps plan a trip, not only look up plans.
